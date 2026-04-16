@@ -2,8 +2,13 @@ const canvas = document.getElementById("game");
     const ctx = canvas.getContext("2d");
 
     // 8x8 cellás játék, de belső rács: 2n+1 (falas labirintus)
-    const cells = 8;
-    const size = cells * 2 + 1; // 17x17
+    function sizing(n) {
+      let cells = n;
+      if (cells % 2 == 1) {
+        cells += 1;
+      }
+    }
+    const size = cells + 1;
     const tile = canvas.width / size;
 
     let maze = [];
