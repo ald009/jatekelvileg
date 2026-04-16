@@ -7,13 +7,13 @@
 </head>
 <body>
   <h2>Labirintus játék</h2>
-  <p>Jegyezd meg a pályát! 3 másodperc múlva eltűnik.</p>
+  <p>Jegyezd meg a pályát! Amikor elindulsz eltűnik.</p>
   <canvas id="game" width="680" height="680"></canvas>
 
-  <form action="index.html">
+  <form action="javascript:void(0);">
     <h2>Mekkora legyen a labirintus?</h2>
     <input type="number" id="size" required>
-    <input type="submit" value="Kész">
+    <button onclick="sizing()">Kész</button>
   </form>
   <script src="jatek.js"></script>
 </body>
